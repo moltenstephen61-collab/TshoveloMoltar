@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>StartSession</servlet-name>
+        <servlet-class>ac.za.tut.web.StartSession</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SelectQuestions</servlet-name>
+        <servlet-class>ac.za.tut.web.SelectQuestions</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SummaryServelet</servlet-name>
+        <servlet-class>ac.za.tut.web.SummaryServelet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EndSession</servlet-name>
+        <servlet-class>ac.za.tut.web.EndSession</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StartSession</servlet-name>
+        <url-pattern>/StartSession.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SelectQuestions</servlet-name>
+        <url-pattern>/SelectQuestions.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SummaryServelet</servlet-name>
+        <url-pattern>/SummaryServelet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EndSession</servlet-name>
+        <url-pattern>/EndSession.do</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <context-param>
+        <param-name>computer_name</param-name>
+        <param-value>Bob</param-value>
+    </context-param>
+</web-app>
