@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>StartSession</servlet-name>
+        <servlet-class>ac.za.tut.web.StartSession</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CheckMasks</servlet-name>
+        <servlet-class>ac.za.tut.web.CheckMasks</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CheckTemperature</servlet-name>
+        <servlet-class>ac.za.tut.web.CheckTemperature</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EndSession</servlet-name>
+        <servlet-class>ac.za.tut.web.EndSession</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StartSession</servlet-name>
+        <url-pattern>/StartSession.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CheckMasks</servlet-name>
+        <url-pattern>/CheckMasks.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CheckTemperature</servlet-name>
+        <url-pattern>/CheckTemperature.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EndSession</servlet-name>
+        <url-pattern>/EndSession.do</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
