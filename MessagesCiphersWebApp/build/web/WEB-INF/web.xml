@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <context-param>
+        <param-name>computer_name</param-name>
+        <param-value>Siri</param-value>
+    </context-param>
+    <servlet>
+        <servlet-name>StartSessionServelet</servlet-name>
+        <servlet-class>ac.za.tut.web.StartSessionServelet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SendMessegeServelet</servlet-name>
+        <servlet-class>ac.za.tut.web.SendMessegeServelet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StartSessionServelet</servlet-name>
+        <url-pattern>/StartSessionServelet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SendMessegeServelet</servlet-name>
+        <url-pattern>/SendMessegeServelet.do</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
