@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>StartSession</servlet-name>
+        <servlet-class>ac.za.tut.web.StartSession</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EndServelet</servlet-name>
+        <servlet-class>ac.za.tut.web.EndServelet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GenerateFibonacci</servlet-name>
+        <servlet-class>ac.za.tut.web.GenerateFibonacci</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>VerifyAnswers</servlet-name>
+        <servlet-class>ac.za.tut.web.VerifyAnswers</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StartSession</servlet-name>
+        <url-pattern>/StartSession.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EndServelet</servlet-name>
+        <url-pattern>/EndServelet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GenerateFibonacci</servlet-name>
+        <url-pattern>/GenerateFibonacci.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>VerifyAnswers</servlet-name>
+        <url-pattern>/VerifyAnswers.do</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <context-param>
+        <param-name>computer_name</param-name>
+        <param-value>Bob</param-value>
+    </context-param>
+</web-app>
