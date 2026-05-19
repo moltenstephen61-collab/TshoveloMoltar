@@ -2,6 +2,13 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/Users/TSHOVELO%20MOLTAR/Documents/NetBeansProjects/BankAccountsWebApp/web/menu_page.html</file>
+            <file>file:/C:/Users/TSHOVELO%20MOLTAR/Documents/NetBeansProjects/BankAccountsWebApp/web/display_total_number_of_accounts.html</file>
+            <file>file:/C:/Users/TSHOVELO%20MOLTAR/Documents/NetBeansProjects/BankAccountsWebApp/web/index.html</file>
+            <file>file:/C:/Users/TSHOVELO%20MOLTAR/Documents/NetBeansProjects/BankAccountsWebApp/src/java/ac/za/tut/web/DisplayTotalNumberOfAccounts.java</file>
+            <file>file:/C:/Users/TSHOVELO%20MOLTAR/Documents/NetBeansProjects/BankAccountsWebApp/web/get_total_number_of_accounts.jsp</file>
+            <file>file:/C:/Users/TSHOVELO%20MOLTAR/Documents/NetBeansProjects/BankAccountsWebApp/web/edit_account_details_outcome.jsp</file>
+        </group>
     </open-files>
 </project-private>

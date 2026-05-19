@@ -29,5 +29,9 @@ public interface AccountFacadeLocal {
     List<Account> findRange(int[] range);
 
     int count();
-    
+    //
+    Account findByAccountNumber(String accountNumber);
+    //
+    void updateAccountCustom(String accNum, String accType, Double balance, String name, String surname, String gender, java.time.LocalDate dob, boolean married);
+    //     
 }

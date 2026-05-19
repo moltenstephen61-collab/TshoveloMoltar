@@ -8,6 +8,22 @@
         <servlet-name>ViewAllAccountsWithDetails</servlet-name>
         <servlet-class>ac.za.tut.web.ViewAllAccountsWithDetails</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>SearchAccountByAccountNumber</servlet-name>
+        <servlet-class>ac.za.tut.web.SearchAccountByAccountNumber</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RemoveAnAccountByAccountNumber</servlet-name>
+        <servlet-class>ac.za.tut.web.RemoveAnAccountByAccountNumber</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditAccountDetails</servlet-name>
+        <servlet-class>ac.za.tut.web.EditAccountDetails</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DisplayTotalNumberOfAccounts</servlet-name>
+        <servlet-class>ac.za.tut.web.DisplayTotalNumberOfAccounts</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>AddAnAcount</servlet-name>
         <url-pattern>/AddAnAcount.do</url-pattern>
@@ -19,6 +35,22 @@
     <servlet-mapping>
         <servlet-name>ViewAllAccountsWithDetails</servlet-name>
         <url-pattern>/ViewAllAccountsWithDetails.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SearchAccountByAccountNumber</servlet-name>
+        <url-pattern>/SearchAccountByAccountNumber.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RemoveAnAccountByAccountNumber</servlet-name>
+        <url-pattern>/RemoveAnAccountByAccountNumber.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditAccountDetails</servlet-name>
+        <url-pattern>/EditAccountDetails.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DisplayTotalNumberOfAccounts</servlet-name>
+        <url-pattern>/DisplayTotalNumberOfAccounts.do</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

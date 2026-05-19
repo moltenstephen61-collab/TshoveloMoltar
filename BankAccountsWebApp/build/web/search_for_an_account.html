@@ -11,6 +11,13 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>Search For An Account</div>
+        <h1>Search For An Account</h1>
+        <p>
+            Please Enter The Account Number of the account you want to search Below 
+        </p>
+        <form action="SearchAccountByAccountNumber.do" method="Post">
+            Account Number : <input type="text" name="acc_number">
+            <input type="submit" value="Search">
+        </form>
     </body>
 </html>
