@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Add An Account Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Add An Account</h1>
+        <p>
+         Please Fill in the form below to add an account.   
+        </p>
+        <form action = "AddAnAcount.do" method="Post">
+            Account Number                : <input type="text" name="acc_number"><br>
+            Account Type                  : <select name="acc_type">
+                <option value="Savings Account">Savings Account</option>
+                <option value="Checking/Current Account">Checking/Current Account</option>
+                <option value="Fixed Deposit Account">Fixed Deposit Account</option>
+                <option value="Business Account">Business Account</option>
+                <option value="Student Account">Student Account</option>
+            </select><br>
+            Balance                       : <input type="text" name="acc_balance"><br>
+            Account Holder Name           : <input type="text" name="holder_name"><br>
+            Account Holder Surname        : <input type="text" name="holder_surname"><br>
+            Account Holder Gender         : <select name="holder_gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select><br>
+            Account Date of Birth         : <input type="date" name="holder_dob"><br>
+            Account Holder Marital Status : <select name="holder_marital_status">
+                <option value="true">Married</option>
+                <option value="false">Not Married</option>
+                                            </select><br>
+            <input type="submit" value="Add Account">
+        </form>
+    </body>
+</html>
