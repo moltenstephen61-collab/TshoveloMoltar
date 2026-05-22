@@ -12,6 +12,14 @@
         <servlet-name>ChooseProjectsOfChoice</servlet-name>
         <servlet-class>ac.za.tut.web.ChooseProjectsOfChoice</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>AddSelectedProjectsServlet</servlet-name>
+        <servlet-class>ac.za.tut.web.AddSelectedProjectsServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EndSession</servlet-name>
+        <servlet-class>ac.za.tut.web.EndSession</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>AddCompaniesAndProjects</servlet-name>
         <url-pattern>/AddCompaniesAndProjects.do</url-pattern>
@@ -24,9 +32,23 @@
         <servlet-name>ChooseProjectsOfChoice</servlet-name>
         <url-pattern>/ChooseProjectsOfChoice.do</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddSelectedProjectsServlet</servlet-name>
+        <url-pattern>/AddSelectedProjectsServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EndSession</servlet-name>
+        <url-pattern>/EndSession.do</url-pattern>
+    </servlet-mapping>
+    <error-page>
+        <exception-type>java.lang.IllegalArgumentException</exception-type>
+        <location>/input_error_page.jsp</location>
+    </error-page>
     <session-config>
         <session-timeout>
             30
         </session-timeout>
     </session-config>
+    
+    
 </web-app>

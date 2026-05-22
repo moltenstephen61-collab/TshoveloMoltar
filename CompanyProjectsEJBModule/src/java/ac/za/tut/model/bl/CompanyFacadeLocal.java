@@ -29,5 +29,11 @@ public interface CompanyFacadeLocal {
     List<Company> findRange(int[] range);
 
     int count();
+    //
+    void processAndSaveCompanyWithProjects(
+            String rawCompId, String compName,
+            String title0, String descr0,
+            String title1, String descr1,
+            String title2, String descr2);
     
 }
