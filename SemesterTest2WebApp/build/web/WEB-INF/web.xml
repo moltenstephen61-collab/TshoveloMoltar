@@ -4,6 +4,18 @@
         <servlet-name>AnalyzeShortMessages</servlet-name>
         <servlet-class>ac.za.tut.web.AnalyzeShortMessages</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ViewSummaryReports</servlet-name>
+        <servlet-class>ac.za.tut.web.ViewSummaryReports</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EndSession</servlet-name>
+        <servlet-class>ac.za.tut.web.EndSession</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ViewAnalysisOfLongestReport</servlet-name>
+        <servlet-class>ac.za.tut.web.ViewAnalysisOfLongestReport</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>AnalyzeShortMessages</servlet-name>
         <url-pattern>/AnalyzeShortMessages.do</url-pattern>
@@ -16,6 +28,18 @@
         <error-code>404</error-code>
         <location>/error-404.jsp</location>
     </error-page>
+    <servlet-mapping>
+        <servlet-name>ViewSummaryReports</servlet-name>
+        <url-pattern>/ViewSummaryReports.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EndSession</servlet-name>
+        <url-pattern>/EndSession.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ViewAnalysisOfLongestReport</servlet-name>
+        <url-pattern>/ViewAnalysisOfLongestReport.do</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30

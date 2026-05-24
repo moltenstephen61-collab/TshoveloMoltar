@@ -6,6 +6,7 @@ import java.util.List;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
 
 /**
  * @author TSHOVELO MOLTAR
@@ -103,5 +104,19 @@ public class ShortMessageFacade extends AbstractFacade<ShortMessage> implements 
             }
         }
         return String.join(", ", repeatingWords);
+    }
+
+    @Override
+    public ShortMessage getReportOfLongestMessage() {
+     //
+     String sqlquery = "SELECT m FROM ShortMessage m WHERE m.message_length = (SELECT MAX(s.message_length) FROM ShortMessage s) ";
+     Query query = em.createQuery(sqlquery);
+     //
+     List<ShortMessage> longest_Message = (List<ShortMessage>)query.getResultList();
+     //
+     if (!longest_Message.isEmpty() ){
+         return longest_Message.get(0);
+     } 
+      return null;
     }
 }

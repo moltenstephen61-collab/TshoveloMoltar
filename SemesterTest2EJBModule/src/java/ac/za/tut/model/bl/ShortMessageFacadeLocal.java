@@ -38,5 +38,7 @@ public interface ShortMessageFacadeLocal {
     //
     String uniqueWords(String message);
     String repeatingWords(String message);
+    //
+    ShortMessage getReportOfLongestMessage();
     
 }
