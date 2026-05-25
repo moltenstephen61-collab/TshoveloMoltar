@@ -29,5 +29,7 @@ public interface StudentFacadeLocal {
     List<Student> findRange(int[] range);
 
     int count();
+    //
+    List<Student> getStudentWhoPassed();
     
 }

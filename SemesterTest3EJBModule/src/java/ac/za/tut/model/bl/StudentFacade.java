@@ -6,9 +6,11 @@
 package ac.za.tut.model.bl;
 
 import ac.za.tut.model.entity.Student;
+import java.util.List;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
 
 /**
  *
@@ -27,6 +29,17 @@ public class StudentFacade extends AbstractFacade<Student> implements StudentFac
 
     public StudentFacade() {
         super(Student.class);
+    }
+
+    @Override
+    public List<Student> getStudentWhoPassed() {
+      //
+      String queryStr = "SELECT s FROM Student s WHERE s.marks > 50";
+      Query query = em.createQuery(queryStr);
+      //
+      List<Student> studentPassed = (List<Student>)query.getResultList();
+      //
+      return studentPassed;
     }
     
 }

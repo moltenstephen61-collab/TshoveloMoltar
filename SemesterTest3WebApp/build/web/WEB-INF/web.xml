@@ -20,6 +20,10 @@
         <servlet-name>CalculateMarks</servlet-name>
         <servlet-class>ac.za.tut.web.CalculateMarks</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ViewAllStudentsWhoPassed</servlet-name>
+        <servlet-class>ac.za.tut.web.ViewAllStudentsWhoPassed</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>LoginServelet</servlet-name>
         <url-pattern>/LoginServelet.do</url-pattern>
@@ -40,6 +44,10 @@
         <servlet-name>CalculateMarks</servlet-name>
         <url-pattern>/CalculateMarks.do</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ViewAllStudentsWhoPassed</servlet-name>
+        <url-pattern>/ViewAllStudentsWhoPassed.do</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30
@@ -50,7 +58,10 @@
         <web-resource-collection>
             <web-resource-name>LecturerPrivateResources</web-resource-name>
             <description/>
-            <url-pattern>/lecturer_menu.html</url-pattern>
+            <url-pattern>/lecturer_menu.html</url-pattern> 
+            <url-pattern>/view_students_passed.html</url-pattern>
+            <url-pattern>/ViewAllStudentsWhoPassed.do</url-pattern>
+            <url-pattern>/get_passed_students_outcome.jsp</url-pattern>
         </web-resource-collection>
         <auth-constraint>
             <description/>
@@ -62,7 +73,7 @@
         <web-resource-collection>
             <web-resource-name>StudentPrivateResources</web-resource-name>
             <description/>
-            <url-pattern>/student_menu.html</url-pattern> 
+            <url-pattern>/student_menu.html</url-pattern>
             <url-pattern>/take_test.jsp</url-pattern>
             <url-pattern>/Quiz_started.jsp</url-pattern>
             <url-pattern>/StartTest.do</url-pattern>

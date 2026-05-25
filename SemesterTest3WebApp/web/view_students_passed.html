@@ -6,19 +6,17 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>Lecturer Menu Page</title>
+        <title>See Students Who Passed Page</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <h1>Lecturer Menu</h1>
+        <h1>See Students Who Passed</h1>
         <p>
-          Below are the options available to you or for you.  
+            Press the button below to see students who passed.
         </p>
-        <ul>
-            <li><a href="SetMultipleChoiceTest.do">Set Multiple Choice Test</a></li>
-            <li><a href="view_students_passed.html">See Students who passed</a></li>
-            <li><a href="EndSession.do">Logout</a></li>
-        </ul>
+        <form action="ViewAllStudentsWhoPassed.do" method="POST">
+            <input type="submit" value="See Students Who Passed">
+        </form>
     </body>
 </html>
